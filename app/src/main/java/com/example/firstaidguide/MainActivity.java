@@ -3,6 +3,7 @@ package com.example.firstaidguide;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.VideoView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -17,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.firstaidguide.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;

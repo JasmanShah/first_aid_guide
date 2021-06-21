@@ -2,7 +2,7 @@
     <string name="app_name">First Aid Guide</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">First Aid Kit</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -10,4 +10,68 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus bibendum dignissim diam at accumsan. Aliquam ac metus sagittis, interdum sapien at,posuere nulla.
+        Proin condimentum malesuada ullamcorper. Praesent ornare pharetra facilisis.
+        Vivamus sagittis metus vel imperdiet dignissim. Donec rhoncus in diam sit amet scelerisque.
+        Donec neque erat, tincidunt a luctus non, volutpat eu velit.
+
+        Duis pulvinar auctor ligula non mollis. Phasellus eget imperdiet lorem.
+        Praesent dignissim, lectus malesuada suscipit pellentesque, nisl mauris fringilla ex, at porttitor lacus ante non elit.
+        Aliquam aliquet efficitur semper. Morbi id commodo nibh. Morbi et dolor dignissim, tincidunt magna id, convallis orci.
+        Vivamus ut sagittis quam. In ac interdum dolor. Suspendisse eu est vitae nisl fringilla blandit a sit amet tortor.
+        Quisque aliquet tincidunt tellus sit amet posuere. Aliquam luctus metus eu justo pellentesque, ut pulvinar metus facilisis.
+        Vivamus mollis bibendum pretium. Suspendisse sit amet varius nisi.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        In hac habitasse platea dictumst. Morbi quis erat a purus imperdiet placerat ac mollis metus.
+        Nullam eget dignissim ante. Integer tempus dolor arcu, quis tempus purus aliquam eget.
+        Ut facilisis ornare massa nec tincidunt. Aliquam laoreet sem convallis, tempus urna sit amet, tincidunt elit.
+        In cursus pulvinar ligula, vitae elementum dui rhoncus nec. Nulla faucibus dui nibh, sit amet pretium tellus feugiat id.
+        Aliquam lacinia erat non commodo posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Duis vel neque purus. Sed rutrum porttitor lobortis. Vivamus eget sapien libero.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus bibendum dignissim diam at accumsan. Aliquam ac metus sagittis, interdum sapien at,posuere nulla.
+        Proin condimentum malesuada ullamcorper. Praesent ornare pharetra facilisis.
+        Vivamus sagittis metus vel imperdiet dignissim. Donec rhoncus in diam sit amet scelerisque.
+        Donec neque erat, tincidunt a luctus non, volutpat eu velit.
+
+        Duis pulvinar auctor ligula non mollis. Phasellus eget imperdiet lorem.
+        Praesent dignissim, lectus malesuada suscipit pellentesque, nisl mauris fringilla ex, at porttitor lacus ante non elit.
+        Aliquam aliquet efficitur semper. Morbi id commodo nibh. Morbi et dolor dignissim, tincidunt magna id, convallis orci.
+        Vivamus ut sagittis quam. In ac interdum dolor. Suspendisse eu est vitae nisl fringilla blandit a sit amet tortor.
+        Quisque aliquet tincidunt tellus sit amet posuere. Aliquam luctus metus eu justo pellentesque, ut pulvinar metus facilisis.
+        Vivamus mollis bibendum pretium. Suspendisse sit amet varius nisi.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        In hac habitasse platea dictumst. Morbi quis erat a purus imperdiet placerat ac mollis metus.
+        Nullam eget dignissim ante. Integer tempus dolor arcu, quis tempus purus aliquam eget.
+        Ut facilisis ornare massa nec tincidunt. Aliquam laoreet sem convallis, tempus urna sit amet, tincidunt elit.
+        In cursus pulvinar ligula, vitae elementum dui rhoncus nec. Nulla faucibus dui nibh, sit amet pretium tellus feugiat id.
+        Aliquam lacinia erat non commodo posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Duis vel neque purus. Sed rutrum porttitor lobortis. Vivamus eget sapien libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus bibendum dignissim diam at accumsan. Aliquam ac metus sagittis, interdum sapien at,posuere nulla.
+        Proin condimentum malesuada ullamcorper. Praesent ornare pharetra facilisis.
+        Vivamus sagittis metus vel imperdiet dignissim. Donec rhoncus in diam sit amet scelerisque.
+        Donec neque erat, tincidunt a luctus non, volutpat eu velit.
+
+        Duis pulvinar auctor ligula non mollis. Phasellus eget imperdiet lorem.
+        Praesent dignissim, lectus malesuada suscipit pellentesque, nisl mauris fringilla ex, at porttitor lacus ante non elit.
+        Aliquam aliquet efficitur semper. Morbi id commodo nibh. Morbi et dolor dignissim, tincidunt magna id, convallis orci.
+        Vivamus ut sagittis quam. In ac interdum dolor. Suspendisse eu est vitae nisl fringilla blandit a sit amet tortor.
+        Quisque aliquet tincidunt tellus sit amet posuere. Aliquam luctus metus eu justo pellentesque, ut pulvinar metus facilisis.
+        Vivamus mollis bibendum pretium. Suspendisse sit amet varius nisi.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        In hac habitasse platea dictumst. Morbi quis erat a purus imperdiet placerat ac mollis metus.
+        Nullam eget dignissim ante. Integer tempus dolor arcu, quis tempus purus aliquam eget.
+        Ut facilisis ornare massa nec tincidunt. Aliquam laoreet sem convallis, tempus urna sit amet, tincidunt elit.
+        In cursus pulvinar ligula, vitae elementum dui rhoncus nec. Nulla faucibus dui nibh, sit amet pretium tellus feugiat id.
+        Aliquam lacinia erat non commodo posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Duis vel neque purus. Sed rutrum porttitor lobortis. Vivamus eget sapien libero.
+
+
+    </string>
 </resources>
