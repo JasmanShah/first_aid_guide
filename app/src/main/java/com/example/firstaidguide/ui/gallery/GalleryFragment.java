@@ -1,10 +1,13 @@
 package com.example.firstaidguide.ui.gallery;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,6 +25,15 @@ public class GalleryFragment extends Fragment {;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
+        // Configure Video
+        MediaController mc= new MediaController(getActivity());
+        VideoView video = (VideoView) view.findViewById(R.id.testVideo);
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.ajr;
+        video.setVideoURI(Uri.parse(path));
+        video.setMediaController(mc);
+        video.start();
+        video.requestFocus();
+
         return view;
 
     }
