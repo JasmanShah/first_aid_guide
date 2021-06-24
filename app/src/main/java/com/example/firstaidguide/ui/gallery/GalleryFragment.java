@@ -31,6 +31,7 @@ public class GalleryFragment extends Fragment {;
         String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.ajr; //video source
         video.setVideoURI(Uri.parse(path));
         video.setMediaController(mc);
+        mc.setAnchorView(video);
 //        video.start();
 //        video.requestFocus();
 

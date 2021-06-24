@@ -34,10 +34,15 @@
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
-            <VideoView
-                android:id="@+id/testVideo"
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="200dp" />
+                android:layout_height="wrap_content">
+                <VideoView
+                    android:id="@+id/testVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/textView3"
@@ -102,10 +107,9 @@
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="2. Cool the skin"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                tools:text="2. Cool the skin" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView11"
