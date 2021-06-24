@@ -26,13 +26,13 @@ public class GalleryFragment extends Fragment {;
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
         // Configure Video
-        MediaController mc= new MediaController(getActivity());
-        VideoView video = (VideoView) view.findViewById(R.id.testVideo);
-        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.ajr;
+        MediaController mc= new MediaController(getActivity()); // Media player ctrl
+        VideoView video = (VideoView) view.findViewById(R.id.testVideo); //VideoView id
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.ajr; //video source
         video.setVideoURI(Uri.parse(path));
         video.setMediaController(mc);
-        video.start();
-        video.requestFocus();
+//        video.start();
+//        video.requestFocus();
 
         return view;
 
