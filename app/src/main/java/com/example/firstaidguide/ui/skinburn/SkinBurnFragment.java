@@ -25,14 +25,12 @@ public class SkinBurnFragment extends Fragment {;
         // Configure Video
         MediaController mc= new MediaController(getActivity()); // Media player ctrl
         VideoView video = (VideoView) view.findViewById(R.id.testVideo); //VideoView id
-        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.ajr; //video source
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.skin_burn_1st; //video source
         video.setVideoURI(Uri.parse(path));
         video.setMediaController(mc);
         mc.setAnchorView(video);
-        video.requestFocus();
 
         return view;
-
     }
 
     @Override
