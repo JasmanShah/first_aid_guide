@@ -6,25 +6,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.MediaController;
-import android.widget.TextView;
 import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.firstaidguide.R;
-import com.example.firstaidguide.databinding.FragmentGalleryBinding;
+import com.example.firstaidguide.databinding.FragmentSkinBurnBinding;
 
 public class GalleryFragment extends Fragment {;
 
-    private GalleryViewModel galleryViewModel;
-    private FragmentGalleryBinding binding;
+//    private GalleryViewModel galleryViewModel;
+    private FragmentSkinBurnBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View view = inflater.inflate(R.layout.fragment_skin_burn, container, false);
         // Configure Video
         MediaController mc= new MediaController(getActivity()); // Media player ctrl
         VideoView video = (VideoView) view.findViewById(R.id.testVideo); //VideoView id
@@ -32,8 +29,7 @@ public class GalleryFragment extends Fragment {;
         video.setVideoURI(Uri.parse(path));
         video.setMediaController(mc);
         mc.setAnchorView(video);
-//        video.start();
-//        video.requestFocus();
+        video.requestFocus();
 
         return view;
 
