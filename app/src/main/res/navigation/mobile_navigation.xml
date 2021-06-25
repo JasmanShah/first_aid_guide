@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_skin_burn" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.firstaidguide.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_snake_venom"
+        android:name="com.example.firstaidguide.ui.snakevenom.SnakeVenomFragment"
         android:label="@string/menu_snake_venom"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

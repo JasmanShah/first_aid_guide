@@ -1,14 +1,14 @@
-package com.example.firstaidguide.ui.slideshow;
+package com.example.firstaidguide.ui.snakevenom;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class SnakeVenomModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public SnakeVenomModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is slideshow fragment");
     }
