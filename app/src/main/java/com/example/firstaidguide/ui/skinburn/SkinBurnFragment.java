@@ -1,4 +1,4 @@
-package com.example.firstaidguide.ui.gallery;
+package com.example.firstaidguide.ui.skinburn;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 import com.example.firstaidguide.R;
 import com.example.firstaidguide.databinding.FragmentSkinBurnBinding;
 
-public class GalleryFragment extends Fragment {;
+public class SkinBurnFragment extends Fragment {;
 
 //    private GalleryViewModel galleryViewModel;
     private FragmentSkinBurnBinding binding;
