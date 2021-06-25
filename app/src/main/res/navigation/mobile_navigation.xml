@@ -21,5 +21,5 @@
         android:id="@+id/nav_snake_venom"
         android:name="com.example.firstaidguide.ui.snakevenom.SnakeVenomFragment"
         android:label="@string/menu_snake_venom"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_snake_venom" />
 </navigation>

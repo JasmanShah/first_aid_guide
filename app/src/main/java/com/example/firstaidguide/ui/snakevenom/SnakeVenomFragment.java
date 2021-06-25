@@ -12,19 +12,19 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.firstaidguide.databinding.FragmentSlideshowBinding;
+import com.example.firstaidguide.databinding.FragmentSnakeVenomBinding;
 
 public class SnakeVenomFragment extends Fragment {
 
     private SnakeVenomModel snakeVenomModel;
-    private FragmentSlideshowBinding binding;
+    private FragmentSnakeVenomBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         snakeVenomModel =
                 new ViewModelProvider(this).get(SnakeVenomModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentSnakeVenomBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;

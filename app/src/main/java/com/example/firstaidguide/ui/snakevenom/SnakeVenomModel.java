@@ -10,7 +10,7 @@ public class SnakeVenomModel extends ViewModel {
 
     public SnakeVenomModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is snake venom");
     }
 
     public LiveData<String> getText() {
