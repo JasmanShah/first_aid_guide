@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static class Global {
-        public static String items[];
+        public static String items[]; public static String items2[];
     }
 
     public void onListClick(View v) {
@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (v.getId() == R.id.emergencycall) {
             Global.items = new String[]{"Perlis","Kedah"};
+            Global.items2 = new String[]{
+                    "<b>Polis:</b> 04-908 2222<br><b>Hospital:</b> 04-973 8000<br><b>Bomba:</b> 04-976 0544",//Perlis
+                    "<b>Polis:</b> 04-774 7222<br><b>Hospital:</b> 04-730 8878<br><b>Bomba:</b> 04-733 3444",//Kedah
+            };
             Intent i = new Intent(MainActivity.this,listview_text.class);
             startActivity(i);
         }
