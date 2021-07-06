@@ -6,13 +6,121 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/venom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/venomText"
+        app:layout_constraintEnd_toStartOf="@+id/poison"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/poison"
+        app:srcCompat="@drawable/snake" />
+
     <TextView
+        android:id="@+id/venomText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="40dp"
+        android:text="Venom"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/skin"
+        app:layout_constraintEnd_toEndOf="@+id/venom" />
+
+    <ImageView
+        android:id="@+id/poison"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/poisonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/venom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poison" />
+
+    <TextView
+        android:id="@+id/poisonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="190dp"
+        android:text="Poison"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstAidKitText"
+        app:layout_constraintEnd_toEndOf="@+id/poison"
+        app:layout_constraintStart_toStartOf="@+id/poison"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/skin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/skinText"
+        app:layout_constraintEnd_toStartOf="@+id/firstaidkit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstaidkit"
+        app:srcCompat="@drawable/rash" />
+
+    <TextView
+        android:id="@+id/skinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Skin"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/skin"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="@+id/skin" />
+
+    <ImageView
+        android:id="@+id/firstaidkit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstAidKitText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/skin"
+        app:layout_constraintTop_toBottomOf="@+id/poisonText"
+        app:srcCompat="@drawable/firstaidkit" />
+
+    <TextView
+        android:id="@+id/firstAidKitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="First Aid Kit"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/skinText"
+        app:layout_constraintEnd_toEndOf="@+id/firstaidkit"
+        app:layout_constraintTop_toTopOf="@+id/skinText" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/emergencyCallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/emergencycall" />
+
+    <TextView
+        android:id="@+id/emergencyCallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="32dp"
+        android:text="Emergency Call"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
