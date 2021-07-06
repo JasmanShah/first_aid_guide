@@ -12,6 +12,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="32dp"
+        android:onClick="onListClick"
         app:layout_constraintBottom_toTopOf="@+id/venomText"
         app:layout_constraintEnd_toStartOf="@+id/poison"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +37,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="43dp"
         android:layout_marginBottom="27dp"
+        android:onClick="onListClick"
         app:layout_constraintBottom_toBottomOf="@+id/poisonText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/venom"
@@ -61,6 +63,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="32dp"
+        android:onClick="onListClick"
         app:layout_constraintBottom_toTopOf="@+id/skinText"
         app:layout_constraintEnd_toStartOf="@+id/firstaidkit"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +77,7 @@
         android:layout_marginBottom="88dp"
         android:text="Skin"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/emergencycall"
         app:layout_constraintEnd_toEndOf="@+id/skin"
         app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toStartOf="@+id/skin" />
@@ -86,6 +89,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="43dp"
         android:layout_marginBottom="27dp"
+        android:onClick="onListClick"
         app:layout_constraintBottom_toBottomOf="@+id/firstAidKitText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/skin"
@@ -104,9 +108,10 @@
         app:layout_constraintTop_toTopOf="@+id/skinText" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/emergencycall"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:onClick="onListClick"
         app:layout_constraintBottom_toTopOf="@+id/emergencyCallText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,6 +126,6 @@
         android:text="Emergency Call"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5" />
+        app:layout_constraintEnd_toEndOf="@+id/emergencycall" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
