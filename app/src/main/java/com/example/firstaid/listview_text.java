@@ -24,7 +24,7 @@ public class listview_text extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(listview_text.this, MainActivity.Global.items2[position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(listview_text.this, MainActivity.Global.items[position], Toast.LENGTH_SHORT).show();
             }
         });
     }
