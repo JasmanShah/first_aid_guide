@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     "<b>Polis:</b> 04-908 2222<br><b>Hospital:</b> 04-973 8000<br><b>Bomba:</b> 04-976 0544",//Perlis
                     "<b>Polis:</b> 04-774 7222<br><b>Hospital:</b> 04-730 8878<br><b>Bomba:</b> 04-733 3444",//Kedah
             };
-            Global.image = new String[]{"snake","poison"};
+            Global.image = new String[]{"perlis","kedah"};
         }
         Intent i = new Intent(MainActivity.this,listview_text.class);
         startActivity(i);
