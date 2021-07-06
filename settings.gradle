@@ -1,2 +1,2 @@
-rootProject.name = "First Aid Guide"
+rootProject.name = "First Aid"
 include ':app'
