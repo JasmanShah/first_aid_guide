@@ -14,35 +14,43 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static class Global {
-        public static String items[], items2[], image[];
+        public static String[] items;
+        public static String[] items2;
+        public static String[] image;
+        public static String type;
     }
 
     public void onListClick(View v) {
         if (v.getId() == R.id.venom) {
+            Global.type = null;
             Global.items = new String[]{"Snake","Scorpion","Spider"};
-//            Intent i = new Intent(MainActivity.this,listview_text.class);
-//            startActivity(i);
+            Intent i = new Intent(MainActivity.this, listview_item.class);
+            startActivity(i);
         }
 
         if (v.getId() == R.id.poison) {
+            Global.type = null;
             Global.items = new String[]{"Chemical","Food"};
-//            Intent i = new Intent(MainActivity.this,listview_text.class);
-//            startActivity(i);
+           Intent i = new Intent(MainActivity.this, listview_item.class);
+            startActivity(i);
         }
 
         if (v.getId() == R.id.skin) {
+            Global.type = null;
             Global.items = new String[]{"Burn","Rash"};
-//            Intent i = new Intent(MainActivity.this,listview_text.class);
-//            startActivity(i);
+            Intent i = new Intent(MainActivity.this, listview_item.class);
+            startActivity(i);
         }
 
         if (v.getId() == R.id.firstaidkit) {
+            Global.type = "firstaidkit";
             Global.items = new String[]{"Chemical","Food"};
-//            Intent i = new Intent(MainActivity.this,listview_text.class);
-//            startActivity(i);
+            Intent i = new Intent(MainActivity.this, listview_item.class);
+            startActivity(i);
         }
 
         if (v.getId() == R.id.emergencycall) {
+            Global.type = "list";
             Global.items = new String[]{"Perlis","Kedah"};
             Global.items2 = new String[]{
                     "<b>Polis:</b> 04-908 2222<br><b>Hospital:</b> 04-973 8000<br><b>Bomba:</b> 04-976 0544",//Perlis
@@ -50,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             };
             Global.image = new String[]{"perlis","kedah"};
         }
-        Intent i = new Intent(MainActivity.this,listview_text.class);
+        Intent i = new Intent(MainActivity.this, listview_item.class);
         startActivity(i);
     }
 }
