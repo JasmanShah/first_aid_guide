@@ -1,3 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">First Aid</string>
+<!--    First Aid Kit-->
+    <string name="adhesive_tape">Tape coated on one side with an adhesive mixture especially one used for covering wounds.</string>
+    <string name="alcohol_swab">An alcohol swab is a gauze pad that has been saturated with alcohol. It is an important part of any first aid kit, as it helps to clean and disinfect cuts and scrapes.</string>
+    <string name="antibiotic_ointment">An antibiotic ointment is an oil-based preparation that fights bacteria on the skin.</string>
+    <string name="bandage">A strip of fabric used especially to cover, dress, and bind up wounds</string>
+    <string name="gauze">Gauze can be used for cleansing, packing, scrubbing, covering, and securing in a variety of wounds.</string>
+    <string name="gloves">Medical gloves are examples of personal protective equipment that are used to protect the wearer and/or the patient from the spread of infection or illness during medical procedures and examinations.</string>
+    <string name="plaster">Medicated Plaster means a pharmaceutical product comprising a drug formulation attached to a backing that is placed on the skin to deliver a drug.</string>
+    <string name="safety_pin">Safety pins are commonly used to fasten pieces of fabric or clothing together.</string>
+    <string name="scissors">an instrument used for cutting cloth, paper, and other material, consisting of two blades laid one on top of the other and fastened in the middle so as to allow them to be opened and closed by a thumb and finger inserted through rings on the end of their handles.</string>
+    <string name="tweezers">A small instrument like a pair of pincers for plucking out hairs and picking up small objects.</string>
+<!--    Phone Number-->
+    <string name="perlis" tools:ignore="TypographyDashes"><![CDATA[ <b>Polis:</b> 04-908 2222<br><b>Hospital:</b> 04-973 8000<br><b>Bomba:</b> 04-976 0544 ]]></string>
+    <string name="kedah" tools:ignore="TypographyDashes"><![CDATA[ <b>Polis:</b> 04-774 7222<br><b>Hospital:</b> 04-730 8878<br><b>Bomba:</b> 04-733 3444 ]]></string>
 </resources>
