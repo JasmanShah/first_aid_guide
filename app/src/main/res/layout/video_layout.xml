@@ -1,6 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true">
 
     <LinearLayout
@@ -10,21 +11,37 @@
 
         <!-- things to scroll -->
 
-        <VideoView
-            android:id="@+id/vVideo"
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="wrap_content"
+            app:autoPlay="true"
+            app:showFullScreenButton="false"
+            app:videoId="" />
+
+        <!--        <VideoView-->
+        <!--            android:id="@+id/videoView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp" />-->
 
         <TextView
             android:id="@+id/vTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/vText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:padding="10dp"
+            android:text="TextView"
+            android:textSize="20sp" />
     </LinearLayout>
 </ScrollView>

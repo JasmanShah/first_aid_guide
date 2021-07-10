@@ -21,24 +21,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onListClick(View v) {
+        Global.type = "null";
         if (v.getId() == R.id.venom) {
-            Global.type = null;
             Global.items = new String[]{"Snake","Scorpion","Spider"};
         }
-
-        if (v.getId() == R.id.poison) {
-            Global.type = null;
-            Global.items = new String[]{"Chemical","Food"};
+        else if (v.getId() == R.id.poison) {
+            Global.items = new String[]{
+                    "Chemical Poisoning",
+                    "Food Poisoning"
+            };
+            Global.items2 = new String[]{
+                    getString(R.string.poison_chemical_text),
+                    getString(R.string.poison_food_text),
+            };
+            Global.media = new String[]{
+                    "Zo0VK1tJHAM",
+                    "E-WfUmNE9BM"
+            };
         }
-
-        if (v.getId() == R.id.skin) {
-            Global.type = "null";
-            Global.items = new String[]{"Burn","Rash"};
-            Global.items2 = new String[]{"Burn","Rash"};
-            Global.media = new String[]{"burn","burn"};
+        else if (v.getId() == R.id.skin) {
+            Global.items = new String[]{
+                    "First/Second Degree Skin Burn",
+                    "Skin Rash"
+            };
+            Global.items2 = new String[]{
+                    getString(R.string.skin_burn_text),
+                    getString(R.string.skin_rash_text),
+            };
+            Global.media = new String[]{
+                    "ZNWjfe-84Ig",
+                    "f9_v0Kani28"
+            };
         }
-
-        if (v.getId() == R.id.firstaidkit) {
+        else if (v.getId() == R.id.firstaidkit) {
             Global.type = "simple_image";
             Global.items = new String[]{
                     "Adhesive Tape",

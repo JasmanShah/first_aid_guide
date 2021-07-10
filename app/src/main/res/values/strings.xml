@@ -14,4 +14,16 @@
 <!--    Phone Number-->
     <string name="perlis" tools:ignore="TypographyDashes"><![CDATA[ <b>Polis:</b> 04-908 2222<br><b>Hospital:</b> 04-973 8000<br><b>Bomba:</b> 04-976 0544 ]]></string>
     <string name="kedah" tools:ignore="TypographyDashes"><![CDATA[ <b>Polis:</b> 04-774 7222<br><b>Hospital:</b> 04-730 8878<br><b>Bomba:</b> 04-733 3444 ]]></string>
+
+    <string name="skin_burn_text" tools:ignore="TypographyDashes"><![CDATA[ <p>1.&nbsp;Determine if you have a first or second degree burn.<br />2. Cool the skin.<br />3. Ice the burn if you still feel pain.<br />4. Apply an antibiotic and wrap the burn if blisters develop.</p> ]]></string>
+    <string name="skin_rash_text" tools:ignore="TypographyDashes"><![CDATA[ <p>1. Wash the area with natural soap and warm water up to 3 times per day.<br />2. Use a cold compress to control pain.<br />3. Apply recommended remedies below:</p><p>- olive oil<br />- baking soda<br />- oatmeal<br />Finally don\'t scratch the rash area.</p> ]]></string>
+    <string name="poison_food_text" tools:ignore="TypographyDashes"><![CDATA[ <p>1. Drink barley or rice water.<br />2. Take some probiotic supplements.<br />3. Take some apple cider vinegar.<br />4. Use herbs that may have antimicrobial properties<br />-Thyme<br />-rosemary<br />-coriander<br />-sage<br />-spearmint</p> ]]></string>
+    <string name="poison_chemical_text" tools:ignore="TypographyDashes"><![CDATA[ <p>1. Stay calm<br />2. Read the instructions on the label if the poison is a household chemical.<br />3. Ask the person to spit out any poison in their mouth.<br />4. Clear the person&rsquo;s airway if they vomit.<br />5. Take off any contaminated clothing using gloves.<br />6. Clean any contaminated skin with cool water.<br />7. Rinse away poison in the eyes with cool or lukewarm water.<br />8. Get the person to fresh air right away if they&rsquo;ve inhaled poison.<br />9. Lie down in the recovery position if you&rsquo;ve been poisoned and feel sick or faint.<br />10. Perform CPR if a poisoned person is not breathing, moving, or coughing.</p> ]]></string>
+    <string name="test3" tools:ignore="TypographyDashes"><![CDATA[  ]]></string>
+    <string name="test4" tools:ignore="TypographyDashes"><![CDATA[  ]]></string>
+
+
+
+
+
 </resources>

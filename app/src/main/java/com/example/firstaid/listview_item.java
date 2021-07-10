@@ -22,7 +22,7 @@ import android.widget.VideoView;
 public class listview_item extends Activity {
     public static class Global {
         public static String title;
-        public static String body;
+        public static Spanned body;
         public static String video;
     }
     @Override
@@ -38,8 +38,9 @@ public class listview_item extends Activity {
                     String text = String.format(MainActivity.Global.items2[position]);
                     showImageLayout (MainActivity.Global.items[position], Html.fromHtml(text), MainActivity.Global.media[position]);
                 } else {
+                    String text = String.format(MainActivity.Global.items2[position]);
                     Global.title = String.format(MainActivity.Global.items[position]);
-                    Global.body = String.format(MainActivity.Global.items2[position]);
+                    Global.body = Html.fromHtml(text);
                     Global.video = String.format(MainActivity.Global.media[position]);
                     Intent i = new Intent(listview_item.this, mediaActivity.class);
                     startActivity(i);
@@ -49,7 +50,6 @@ public class listview_item extends Activity {
 
     public void showImageLayout(String title, Spanned body, String image) {
 
-        String variableValue = image;
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.image_layout, null);
@@ -59,7 +59,7 @@ public class listview_item extends Activity {
         TextView titleView = (TextView) dialogView.findViewById(R.id.imageViewTitle);
         TextView bodyView = (TextView) dialogView.findViewById(R.id.imageViewText);
 
-        imageview.setImageResource(getResources().getIdentifier(variableValue, "drawable", getPackageName()));
+        imageview.setImageResource(getResources().getIdentifier(image, "drawable", getPackageName()));
         titleView.setText(title);
         bodyView.setText(body);
 
