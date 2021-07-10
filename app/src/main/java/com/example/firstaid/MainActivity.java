@@ -23,7 +23,18 @@ public class MainActivity extends AppCompatActivity {
     public void onListClick(View v) {
         Global.type = "null";
         if (v.getId() == R.id.venom) {
-            Global.items = new String[]{"Snake","Scorpion","Spider"};
+            Global.items = new String[]{
+                    "Snake",
+                    "Spider/Venom"
+            };
+            Global.items2 = new String[]{
+                    getString(R.string.venom_snake_text),
+                    getString(R.string.venom_spider_scorpion_text),
+            };
+            Global.media = new String[]{
+                    "nH8o-bgwo_g",
+                    "wdDi7KNXUNw"
+            };
         }
         else if (v.getId() == R.id.poison) {
             Global.items = new String[]{
