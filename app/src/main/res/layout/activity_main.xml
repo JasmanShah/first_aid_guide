@@ -11,24 +11,29 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:onClick="onListClick"
         app:layout_constraintBottom_toTopOf="@+id/venomText"
         app:layout_constraintEnd_toStartOf="@+id/poison"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/poison"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/snake" />
 
     <TextView
         android:id="@+id/venomText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="41dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="40dp"
+        android:gravity="center"
         android:text="Venom"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/skin"
-        app:layout_constraintEnd_toEndOf="@+id/venom" />
+        app:layout_constraintEnd_toStartOf="@+id/poisonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venom" />
 
     <ImageView
         android:id="@+id/poison"
@@ -36,9 +41,8 @@
         android:layout_height="0dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="43dp"
-        android:layout_marginBottom="27dp"
         android:onClick="onListClick"
-        app:layout_constraintBottom_toBottomOf="@+id/poisonText"
+        app:layout_constraintBottom_toTopOf="@+id/poisonText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/venom"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,16 +50,17 @@
 
     <TextView
         android:id="@+id/poisonText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
-        android:layout_marginBottom="190dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
         android:text="Poison"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/firstAidKitText"
-        app:layout_constraintEnd_toEndOf="@+id/poison"
-        app:layout_constraintStart_toStartOf="@+id/poison"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/firstaidkit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/venomText"
+        app:layout_constraintTop_toBottomOf="@+id/poison" />
 
     <ImageView
         android:id="@+id/skin"
@@ -67,30 +72,31 @@
         app:layout_constraintBottom_toTopOf="@+id/skinText"
         app:layout_constraintEnd_toStartOf="@+id/firstaidkit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/firstaidkit"
+        app:layout_constraintTop_toBottomOf="@+id/venomText"
         app:srcCompat="@drawable/rash" />
 
     <TextView
         android:id="@+id/skinText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="75dp"
+        android:gravity="center"
         android:text="Skin"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/emergencycall"
-        app:layout_constraintEnd_toEndOf="@+id/skin"
-        app:layout_constraintHorizontal_bias="0.321"
-        app:layout_constraintStart_toStartOf="@+id/skin" />
+        app:layout_constraintEnd_toStartOf="@+id/firstAidKitText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skin" />
 
     <ImageView
         android:id="@+id/firstaidkit"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="40dp"
         android:layout_marginEnd="43dp"
-        android:layout_marginBottom="27dp"
         android:onClick="onListClick"
-        app:layout_constraintBottom_toBottomOf="@+id/firstAidKitText"
+        app:layout_constraintBottom_toTopOf="@+id/firstAidKitText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/skin"
         app:layout_constraintTop_toBottomOf="@+id/poisonText"
@@ -98,34 +104,77 @@
 
     <TextView
         android:id="@+id/firstAidKitText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="75dp"
+        android:gravity="center"
         android:text="First Aid Kit"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/skinText"
-        app:layout_constraintEnd_toEndOf="@+id/firstaidkit"
-        app:layout_constraintTop_toTopOf="@+id/skinText" />
+        app:layout_constraintBottom_toTopOf="@+id/personalInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/skinText"
+        app:layout_constraintTop_toBottomOf="@+id/firstaidkit" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="474dp" />
 
     <ImageView
         android:id="@+id/emergencycall"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="32dp"
         android:onClick="onListClick"
         app:layout_constraintBottom_toTopOf="@+id/emergencyCallText"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/personalInfo"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skinText"
         app:srcCompat="@drawable/emergencycall" />
 
     <TextView
         android:id="@+id/emergencyCallText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
         android:text="Emergency Call"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/emergencycall" />
+        app:layout_constraintEnd_toStartOf="@+id/personalInfoText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emergencycall" />
+
+    <ImageView
+        android:id="@+id/personalInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="onPersonalInfoClick"
+        app:layout_constraintBottom_toTopOf="@+id/personalInfoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/emergencycall"
+        app:layout_constraintTop_toBottomOf="@+id/firstAidKitText"
+        app:srcCompat="@drawable/user_info" />
+
+    <TextView
+        android:id="@+id/personalInfoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:text="Personal Info"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/emergencyCallText"
+        app:layout_constraintTop_toBottomOf="@+id/personalInfo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

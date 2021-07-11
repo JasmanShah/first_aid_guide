@@ -104,8 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     "tweezers",
             };
         }
-
-        if (v.getId() == R.id.emergencycall) {
+        else if (v.getId() == R.id.emergencycall) {
             Global.type = "simple_image";
             Global.items = new String[]{"Perlis","Kedah"};
             Global.items2 = new String[]{
@@ -116,6 +115,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Intent i = new Intent(MainActivity.this, listview_item.class);
+        startActivity(i);
+    }
+
+    public void onPersonalInfoClick(View v) {
+        Intent i = new Intent(MainActivity.this, personal_info.class);
         startActivity(i);
     }
 }

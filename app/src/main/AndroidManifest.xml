@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".listview_item" />
         <activity android:name=".mediaActivity" />
+        <activity android:name=".personal_info" />
     </application>
 
 </manifest>
