@@ -1,13 +1,7 @@
 package com.example.firstaid;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.res.Resources;
-import android.net.Uri;
 import android.os.Bundle;
-import android.widget.MediaController;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,17 +32,5 @@ public class mediaActivity extends AppCompatActivity {
         TextView bodyView = findViewById(R.id.vText);
         titleView.setText(listview_item.Global.title);
         bodyView.setText(listview_item.Global.body);
-//
-//        VideoView videoView = (VideoView) findViewById(R.id.videoView);
-//        MediaController mediaController= new MediaController(this);
-//        mediaController.setAnchorView(videoView);
-//
-//        Resources res = getResources();
-//        int videoId = res.getIdentifier(listview_item.Global.video, "raw", getPackageName());
-//        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+ videoId);
-//        videoView.setMediaController(mediaController);
-//        videoView.setVideoURI(uri);
-//        videoView.requestFocus();
-//        videoView.start();
     }
 }

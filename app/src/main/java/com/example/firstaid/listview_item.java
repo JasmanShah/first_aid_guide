@@ -1,6 +1,5 @@
 package com.example.firstaid;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -49,7 +48,7 @@ public class listview_item extends AppCompatActivity {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.image_layout, null);
+        View dialogView = inflater.inflate(R.layout.image_popup_layout, null);
         dialogBuilder.setView(dialogView);
 
         ImageView imageview= dialogView.findViewById(R.id.imageView);
@@ -63,31 +62,6 @@ public class listview_item extends AppCompatActivity {
         AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.show();
     }
-
-//    public void showVideoLayout(String title, Spanned body, String video) {
-//
-//        final Dialog dialog = new Dialog(listview_item.this);
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        dialog.setContentView(R.layout.video_layout);
-//        TextView titleView = (TextView) dialog.findViewById(R.id.mediaTitle);
-//        TextView bodyView = (TextView) dialog.findViewById(R.id.mediaBody);
-//        titleView.setText(title);
-//        bodyView.setText(body);
-//
-//        VideoView videoView =(VideoView) dialog.findViewById(R.id.mediaVideo);
-//
-//        MediaController mediaController= new MediaController(this);
-//        mediaController.setAnchorView(videoView);
-//
-//        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.burn);
-//
-//        videoView.setMediaController(mediaController);
-//        videoView.setVideoURI(uri);
-//        videoView.requestFocus();
-//        videoView.start();
-//        dialog.show();
-//
-//    }
 
 
 }
